@@ -1,12 +1,12 @@
 import { View, Text, StyleSheet } from "react-native";
 
-function RecentExpenses() {
+const RecentExpenses = () => {
   return (
     <View style={styles.container}>
       <Text>Recent Expenses screen</Text>
     </View>
   );
-}
+};
 
 export default RecentExpenses;
 

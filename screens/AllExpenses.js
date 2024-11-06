@@ -1,12 +1,12 @@
 import { View, Text, StyleSheet } from "react-native";
 
-function AllExpenses() {
+const AllExpenses = () => {
   return (
     <View style={styles.container}>
-      <Text>All Expenses Screen</Text>
+      <Text>All Expenses screen</Text>
     </View>
   );
-}
+};
 
 export default AllExpenses;
 
