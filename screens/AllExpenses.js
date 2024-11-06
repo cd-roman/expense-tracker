@@ -1,12 +1,14 @@
 import { View, Text, StyleSheet } from "react-native";
 
-const AllExpenses = () => {
+function AllExpenses() {
   return (
     <View style={styles.container}>
-      <Text>AllExpenses screen</Text>
+      <Text>All Expenses Screen</Text>
     </View>
   );
-};
+}
+
+export default AllExpenses;
 
 const styles = StyleSheet.create({
   container: {
@@ -15,5 +17,3 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 });
-
-export default AllExpenses;
