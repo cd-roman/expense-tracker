@@ -4,38 +4,11 @@ import ExpensesSummary from "./ExpensesSummary";
 import ExpensesList from "./ExpensesList";
 import { GlobalStyles } from "../../constants/styles";
 
-const DUMMY_EXPENSES = [
-  {
-    id: "e1",
-    description: "New shoes",
-    amount: 99.99,
-    date: new Date(2024, 10, 5),
-  },
-  {
-    id: "e2",
-    description: "Pizza",
-    amount: 11.25,
-    date: new Date(2024, 10, 4),
-  },
-  {
-    id: "e3",
-    description: "Groceries",
-    amount: 37.8,
-    date: new Date(2024, 9, 30),
-  },
-  {
-    id: "e4",
-    description: "React Native course",
-    amount: 15.99,
-    date: new Date(2024, 8, 20),
-  },
-];
-
-const ExpensesOutput = ({ expensesPeriod }) => {
+const ExpensesOutput = ({ expenses, expensesPeriod }) => {
   return (
     <View style={styles.container}>
-      <ExpensesSummary expenses={DUMMY_EXPENSES} periodName={expensesPeriod} />
-      <ExpensesList expenses={DUMMY_EXPENSES} />
+      <ExpensesSummary expenses={expenses} periodName={expensesPeriod} />
+      <ExpensesList expenses={expenses} />
     </View>
   );
 };
